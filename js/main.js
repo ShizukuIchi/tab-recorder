@@ -53,6 +53,11 @@ function handleSuccess(stream) {
   recordButton.disabled = false;
   window.stream = stream;
   startRecording();
+  window.onfocus = function() {
+    if (recordButton.textContent === 'Stop Recording') {
+      stopRecording();
+    }
+  }
 }
 
 chrome.tabCapture.capture(
