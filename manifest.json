@@ -11,6 +11,7 @@
         "persistent": false
     },
     "permissions": [
-        "tabCapture"
+        "tabCapture",
+        "activeTab"
     ]
 }

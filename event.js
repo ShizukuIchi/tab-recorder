@@ -1,8 +1,7 @@
 chrome.browserAction.onClicked.addListener(function() {
-    chrome.tabs.create({
-        url: "preview.html",
-        active: false
-    }, function(tab) {
-        console.log('window open');
-    });
+  chrome.tabs.executeScript(null, {file: "content_script.js"});
+  chrome.tabs.create({
+      url: "preview.html",
+      active: false
+  });
 });
