@@ -3,15 +3,6 @@ body {
   margin: 0;
 
 }
-
-canvas {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  display: block;
-  opacity: 0;
-}
-
 video {
   height: 100vh;
   width: 100vw;
